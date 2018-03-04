@@ -1,0 +1,121 @@
+/* desktop layout */
+
+/* Grid container */
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 400px 50px 400px 1fr;
+	grid-template-rows: 50px 50px 100% 50px 100% 50px 100% 50px;
+	grid-template-areas:
+	". logo . nav ."
+	". . sum sum ."
+	". cont cont cont ."
+	". sep sep sep ."
+	". cont2 cont2 cont2 ."
+	". sep2 sep2 sep2 ."
+	". cont3 cont3 cont3 ."
+	". footer footer footer .";
+	grid-gap: 5px;
+	
+}
+
+
+
+/* Header Cells */
+.logo {
+	grid-area: logo;
+}
+
+.nav {
+	grid-area: nav;
+}
+
+.sum {
+	grid-area: sum;
+}
+
+
+
+/* Content Cells */
+.cont {
+	grid-area: cont;
+}
+
+.cont2 {
+	grid-area: cont2;
+}
+
+.cont3 {
+	grid-area: cont3;
+}
+
+
+
+/* Separator Cells */
+.sep {
+	grid-area: sep;
+}
+
+.sep2 {
+	grid-area: sep2;
+}
+
+
+
+/* Footer Cell*/ 
+.footer {
+	grid-area: footer;
+}
+
+
+
+
+/* Flexbox Container */
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Class for each item in flexbox */
+.flex-item {
+	border: 1px solid black;
+	background-color: white;
+	padding: 1vw;
+	margin: 5px;
+	
+}
+
+/* Will say either Projects, Games or Books */
+.title {
+	width: 150px;
+	height: 100px;
+	text-align: center;
+}
+
+/* Corresponding picture */
+.pic {
+	height: 150px;
+	width: 100px;
+}
+
+/* Corresponding Update */
+.update {
+	width: 400px;
+
+}
+
+/* Not quite sure what this does LOL */
+.html {
+	box-sizing: border-box;
+}
+
+
+
+/* Changing colors for debugging */
+.grid div:nth-child(even) {
+	background-color: red;
+}
+
+.grid div:nth-child(odd) {
+	background-color: blue;
+}
